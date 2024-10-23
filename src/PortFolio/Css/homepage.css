@@ -1,0 +1,83 @@
+/* HomePage.css */
+.homepage {
+  max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff7e5f;
+    color: #ffffff;
+  }
+  /* styles.css */
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 1s forwards;
+}
+
+.description {
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s;
+}
+
+.cta-button {
+  transition: transform 0.2s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+.cta-button:active {
+  transform: scale(0.9);
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

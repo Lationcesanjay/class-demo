@@ -1,0 +1,70 @@
+ 
+
+.about-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+   background: linear-gradient(135deg, #ff7e5f, #feb47b);
+border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.fade-in {
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1s forwards; /* Fade in animation */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End state */
+  }
+}
